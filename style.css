@@ -1,0 +1,201 @@
+    body{
+        background-color: black;
+        margin: 0;
+        color: white;
+    }
+    
+    .navbar nav {
+        position: fixed;     
+        top: 0;   
+        height: 50px;           
+        padding: 1rem; 
+        width: 100%;
+        z-index: 9999;
+        padding-left: 2rem;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;  
+        background-color: #E5E4E2; 
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        
+    }
+
+    .navbar nav ul {
+        list-style: none;
+        margin-right: 22rem;
+        padding: 0;
+        display: flex;
+        font-size: 1.2rem;
+        font-weight: bold;
+        gap: 2rem;
+    }
+
+    .navbar nav ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .navbar.scrolled {
+        background-color: #E5E4E2;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar.scrolled nav ul li a {
+        color: black;
+    }    
+
+    .intro {
+        margin: 150px 50px 0 50px;
+        color: white;
+    }
+
+    .intro h3{
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-bottom: 0.5rem;
+    }
+
+    .intro h1{
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 0 0 1rem 0;
+        color: white;
+    }
+
+    .intro p{
+        font-size: 1.2rem;
+        max-width: 600px;
+        line-height: 1.6;
+    }
+
+    .stats-container{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-left: -350px;
+        flex-wrap: wrap;
+    }
+
+    .stat-box{
+        background-color: grey;
+        border: 2px solid white;
+        border-radius: 6px;
+        padding: 1rem 1.5rem;
+        color: whitesmoke;
+        text-align: center;
+        min-width: 150px;
+        box-shadow: 0 4px 4px;
+        transition: 0.2s ease;     
+    }
+
+    .stat-box:hover {
+        transform: scale(1.05);
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: whitesmoke;
+        margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+
+    .intro-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 3rem;
+        flex-wrap: wrap;
+    }
+
+    .profile-image {
+        position: absolute;
+        top: 120px;
+        right: 100px;
+    }
+
+    .profile-image img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px wheat;
+    }
+
+    .skills-section {
+        margin: 3rem 2rem;
+        color: black;
+        background-color: silver;
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    .skills-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: black;
+        font-weight: bold;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #E5E4E2;  /* Platinum color code */
+        padding: 0.8rem;
+        border-radius: 8px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .skill-item img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.5rem;
+    }
+
+    .skill-item span {
+        font-size: 0.9rem;
+    }
+
+    .skill-item:hover {
+        background-color: #E5E4E2;
+        transform: scale(1.05);
+        transition: 0.3 ease;
+        cursor: pointer;
+    }
+
+    .extra-skill {
+        display: none;
+    }
+
+    #toggle-skills {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #E5E4E2;
+        color: black;
+        border: whitesmoke;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+
+

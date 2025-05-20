@@ -1,7 +1,7 @@
     body{
         background-color: black;
         margin: 0;
-        color: white;
+        color: #F5F5DC;
     }
     
     .navbar nav {
@@ -13,7 +13,7 @@
         z-index: 9999;
         padding-left: 2rem;
         transition: background-color 0.3s ease, box-shadow 0.3s ease;  
-        background-color: #E5E4E2; 
+        background-color: #F5F5DC; 
         display: flex;
         justify-content: right;
         align-items: center;
@@ -31,7 +31,7 @@
     }
 
     .navbar nav ul li a {
-        color: black;
+        color: #6F4E37;
         text-decoration: none;
         font-weight: bold;
         font-size: 1.2rem;
@@ -43,12 +43,12 @@
     }
 
     .navbar.scrolled nav ul li a {
-        color: black;
+        color: #F5F5DC;
     }    
 
     .intro {
         margin: 150px 50px 0 50px;
-        color: white;
+        color: #F5F5DC;
     }
 
     .intro h3{
@@ -61,7 +61,7 @@
         font-size: 3rem;
         font-weight: bold;
         margin: 0 0 1rem 0;
-        color: white;
+        color: wheat;
     }
 
     .intro p{
@@ -79,11 +79,11 @@
     }
 
     .stat-box{
-        background-color: grey;
-        border: 2px solid white;
+        background-color: #6F4E37;
+        border: 2px solid #FFFDD0;
         border-radius: 6px;
         padding: 1rem 1.5rem;
-        color: whitesmoke;
+        color: #F5F5DC;
         text-align: center;
         min-width: 150px;
         box-shadow: 0 4px 4px;
@@ -97,7 +97,7 @@
     .stat-number {
         font-size: 2.5rem;
         font-weight: bold;
-        color: whitesmoke;
+        color: #F5F5DC;
         margin-bottom: 0.5rem;
     }
 
@@ -131,7 +131,7 @@
     .skills-section {
         margin: 3rem 2rem;
         color: black;
-        background-color: silver;
+        background-color: #F5F5DC;
         padding: 1.5rem;
         border-radius: 10px;
     }
@@ -139,7 +139,7 @@
     .skills-section h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
-        color: black;
+        color: #6F4E37;
         font-weight: bold;
     }
 
@@ -153,7 +153,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #E5E4E2;  /* Platinum color code */
+        background-color: 	#A56B46;  /* Platinum color code */
         padding: 0.8rem;
         border-radius: 8px;
         width: 100px;
@@ -171,7 +171,7 @@
     }
 
     .skill-item:hover {
-        background-color: #E5E4E2;
+        background-color: #FFFDD0;
         transform: scale(1.05);
         transition: 0.3 ease;
         cursor: pointer;
@@ -184,8 +184,8 @@
     #toggle-skills {
         margin-top: 1rem;
         padding: 0.5rem 1rem;
-        background-color: #E5E4E2;
-        color: black;
+        background-color: 	#A56B46;
+        color: #F5F5DC;
         border: whitesmoke;
         border-radius: 4px;
         cursor: pointer;
@@ -195,6 +195,130 @@
     html {
         scroll-behavior: smooth;
     }
+
+    .projects-section {
+        margin: 3rem 2rem;
+        color: #6F4E37;
+        background-color: #F5F5DC;
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    .projects-section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #6F4E37;
+        font-weight: bold;
+    }
+
+    .projects-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+        background-color: 	#A56B46; 
+        color: black;
+        width: 100%;
+        max-width: 1230px;
+        margin-left: 70px;
+    }
+
+    .black-container {
+       background-color: black;
+       color: black; /* text color */
+       padding: 1rem;
+       border-radius: 8px;
+    }
+
+
+    .projects-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F5F5DC;  /* Platinum color code */
+        padding: 0.8rem;
+        border-radius: 8px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .projects-item img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.5rem;
+    }
+
+    .projects-item span {
+        font-size: 0.9rem;
+    }
+
+    .projects-item:hover {
+        background-color: #F5F5DC;
+        transform: scale(1.05);
+        transition: 0.3 ease;
+        cursor: pointer;
+    }
+
+    .flappy-image{
+        width: 400px;
+        height: 400px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .text-content h3 {
+        font-size: 2rem;
+        margin-bottom: 0.8rem; 
+    }
+
+    .text-content h4 {
+        font-size: 1rem;
+        margin-bottom: 0.9rem;
+    }
+
+    .inner-box {
+        background-color: #F5F5DC;
+        color: black;               /* Text color */
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        font-size: 1rem;
+        width: fit-content;
+        margin-top: 1rem;
+        border: 1px solid #666;
+        align-self: flex-start;
+    }
+
+    .button-row {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .inner-box2,
+    .inner-box3 {
+        background-color: wheat;
+        color: black;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        border: 1px solid #F5F5DC;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+}
+
+    .inner-box2:hover,
+    .inner-box3:hover {
+        background-color: #F5F5DC;
+    }
+
 
     /* Css for small phones */
 
@@ -256,7 +380,7 @@
         margin-top: 10px;
         margin-bottom: 1rem;
         transform: translateX(-60px);
-        /* margin: 1rem 0 0.5rem; */
+
     }
 
     .profile-image img {

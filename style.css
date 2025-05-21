@@ -186,7 +186,7 @@
         padding: 0.5rem 1rem;
         background-color: 	#A56B46;
         color: #F5F5DC;
-        border: whitesmoke;
+        border: #F5F5DC;
         border-radius: 4px;
         cursor: pointer;
         font-weight: bold;
@@ -328,50 +328,50 @@
         padding: 0;
         overflow-x: hidden;
         background-color: black;
-  }
+    }
 
    .navbar {
-    width: 100%;
-    z-index: 9999;
-    display: flex;
-    justify-content: center; /* Push content to right */
-    position: fixed;
+        width: 100%;
+        z-index: 9999;
+        display: flex;
+        justify-content: center; /* Push content to right */
+        position: fixed;
     
-  }
+    }
 
-  .navbar nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
+    .navbar nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 
-  .navbar nav ul {
-    display: flex;
-    flex-direction: row; /* horizontal even on mobile */
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+    .navbar nav ul {
+        display: flex;
+        flex-direction: row; /* horizontal even on mobile */
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-  .navbar nav ul li a {
-    font-size: 0.85rem;
-    color: black;
-    text-decoration: none;
-  }
+    .navbar nav ul li a {
+        font-size: 0.85rem;
+        color: #6F4E37;
+        text-decoration: none;
+    }
 
-  .navbar.scrolled {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: #111;
-    z-index: 1000;
-  }
+    .navbar.scrolled {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #111;
+        z-index: 1000;
+    }
 
-  .navbar.scrolled nav ul li a {
-    color: #f0f0f0;
-  }
+    .navbar.scrolled nav ul li a {
+       color: #F5F5DC;
+    }
 
     .profile-image {
         display: flex;
@@ -399,20 +399,20 @@
     .intro h3{
        font-size: 1rem;
        font-weight: 500;
-       color: white;
+       color: #F5F5DC;
        margin: 0.2rem 0; 
     }
 
     .intro h1{
         font-size: 1.4rem;
         font-weight: 700;
-        color: white;
+        color: #FFFDD0;
         margin: 0.2rem 0;
     }
 
     .intro p{
         font-size: 0.95rem;
-        color: white;
+        color: #F5F5DC;
         line-height: 1.5;
         margin-top: 0.5rem;
     }
@@ -432,9 +432,9 @@
         width: 80%;
         padding: 0.09rem;
         border-radius: 6px;
-        background-color: grey;
-        border: 2px solid white;
-        color: whitesmoke;
+        background-color: #6F4E37;
+        border: 2px solid #F5F5DC;
+        color: #F5F5DC;
         text-align: center;
         box-shadow: 0 4px 4px;
         transition: 0.2s ease;
@@ -447,7 +447,7 @@
     .stat-number {
         font-size: 1.2rem;
         font-weight: bold;
-        color: whitesmoke;
+        color: #F5F5DC;
         margin-bottom: 0.5rem;
     }
 
@@ -472,7 +472,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #E5E4E2;
+        background-color: #A56B46;
         padding: 0.8rem;
         border-radius: 8px;
         width: 23%;
@@ -490,7 +490,7 @@
     }
 
     .skill-item:hover {
-        background-color: #E5E4E2;
+        background-color: #FFFDD0;
         transform: scale(1.05);
         transition: 0.3s ease;
         cursor: pointer;
@@ -503,12 +503,72 @@
     #toggle-skills {
         margin-top: 1rem;
         padding: 0.5rem 1rem;
-        background-color: #E5E4E2;
-        color: black;
-        border: whitesmoke;
+        background-color: #A56B46;
+        color: #F5F5DC;
+        border: #F5F5DC;
         border-radius: 4px;
         cursor: pointer;
         font-weight: bold;
+    }
+
+    .projects-section {
+        margin: 1rem 0.8rem;
+        padding: 1rem;
+    }
+
+    .projects-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: auto;
+        max-width: 400px;
+        padding: 0.8rem;
+        width: 100%;
+    }
+
+    .flappy-image {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .text-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .text-content h4 {
+        font-size: 0.95rem;
+    }
+
+    .inner-box,
+    .inner-box2,
+    .inner-box3 {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.5rem;
+        width: fit-content; 
+        border-radius: 5px;
+    }
+
+    .button-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .projects-item {
+        width: 100%;
+    }
+
+    .projects-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .projects-item span {
+        font-size: 0.8rem;
     }
 }
 
